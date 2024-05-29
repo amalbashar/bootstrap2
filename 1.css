@@ -68,15 +68,19 @@
     display: flex;
     flex-direction: column;
 }
+.but{ display: flex;
+    width: 20%;
+    justify-items: center;
+   text-align: center; gap: 3%;
 
+}
 .my-button {
     color: black;
-    ;
-    margin-right:
+  padding: 1%;
 }
 
-.my-button1 {
-    padding: 0%;
+.my-button2 {
+    padding: 2%;
 }
 
 /****/
@@ -146,25 +150,215 @@
 
 /**************.f'd hgld]dh***************/
 .line {
+    display: flex;
     width: 100%;
     height: 7vh;
     background-color: #ffa400;
     color: aliceblue;
     justify-content: center;
-    text-align: center;
+    align-items: center; font-weight: bold;
+  
 }
 
-.g2 {
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(12fr); gap: 2%; padding-left: 3%;
+.g2 { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.g2 > img{
+    width: 100%;
 }
 
 @media screen and (max-width: 723px) {
-    .g2{ grid-template-columns:repeat(6fr);
-        grid-template-rows: repeat(2fr);
-        align-items: center;
-    justify-content: center;
-    gap: 1%; padding:1%
- }
+    .g2{  display: grid;
+        grid-template-columns: 1fr;
+   
+ } 
+   .g2 > img{ width: 100%;}
 }
+/**************************************** */
+.cards{
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.card{
+    flex: 1;  
+    height: 100%;
+    border: solid white;
+    border-radius: 100px;
+}
+.firstrows{
+    background: url(pic/minecraft.jpg) ;
+    background-size: cover;
+    position: relative;
+    height: 220px;
+}
+.snsrows{
+    background: url(pic/bee.jpg) ;
+    background-size: cover;
+    position: relative;
+    height: 220px;
+}
+.thrdrows{
+    background: url(pic/us.jpg) ;
+    background-size: cover;
+    position: relative;
+    height: 220px;
+}
+.fthrows{
+    background: url(pic/map.jpg) ;
+    background-size: cover;
+    position: relative;
+    height: 220px;
+}
+.cardtitle1{background-color: rgba(0, 173, 188, 0.92); 
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;}
+.cardtitle2{background-color:rgba(118, 101, 160, 0.92);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;}
+.cardtitle3{background-color: rgba(0, 148, 202, 0.92);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;}
+.cardtitle4{background-color: rgb(209, 213, 103, 0.92);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;}
+    .cato{
+        flex: 1;
+        font-weight: bold;
+    }
+    
+    
+    .rows1{
+        text-align: center;
+        background-color: rgba(0, 173, 188, 0.92);
+        color: white;
+        font-size: 1rem;
+    }
+    .rows2{
+        text-align: center;
+        background-color:rgba(118, 101, 160, 0.92);
+        color: white;
+        font-size: 1rem;
+    }
+    .rows3{
+        text-align: center;
+        background-color: rgba(0, 148, 202, 0.92);
+        color: white;
+        font-size: 1rem;
+    }
+    .rows4{
+        text-align: center;
+        background-color: rgb(209, 213, 103, 0.92);
+        color: white;
+        font-size: 1rem;
+    }
+    .g2{ grid-template-columns:repeat(6fr); }
+    
+    @media screen and (max-width: 723px){ 
+        .cards{
+        display: flex;
+        width: 100%;
+    flex-direction: column}
+       
+    }
+    /***********/ 
+    .imggame1{
+        flex: 1;
+        background-image: url(/responsive/pic/gallery_thumbnails_2019a.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 120px;
+    
+    }
+    
+    .imggame2{
+        flex: 1;
+        background-image: url(/responsive/pic/gallery_thumbnails_2019b.jpg);
+        width: 100%;
+        background-size: cover;
+        height: 120px;
+    
+    }
+    .thanks{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+        height: 20rem;
+        align-items: center;
+        font-weight: lighter;
+        
+    }
+    .thanksbtn{
+        background-color: #6f488e;
+        border: 2px solid white ;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 9px;
+        padding: 1rem;
+    }
+    
+    .thanks > div > a{
+        color: #6f488e;
+        text-decoration: underline;
+    }
+    
+    
+    .footer{
+        background-color:#3f444b;
+        color: white;
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        text-align: start;
+        padding-left: 20%;
+        padding-top: 1%;
+        text-decoration: none;
+    }
+    .spec > a{
+        color: orange; 
+        text-decoration: none;
+    }
+    .norm> a{ text-decoration: none;
+    color: aliceblue;}
+    
+    .links{
+        display: flex;
+        width: 100%;
+    }
+    
+    .footerpic{
+        width: 190px;
+    }
+    #language{
+        color: black;
+    }
+    .leftfooter{
+        display: flex;
+        flex-direction: column;
+    }
+    
